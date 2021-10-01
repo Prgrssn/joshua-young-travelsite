@@ -32,7 +32,6 @@ a {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid red;
   font-family: "Verdana";
   height: 4rem;
 }
@@ -69,7 +68,7 @@ a {
 
 .navbar-links__list--curent {
   border-bottom: 0.2rem solid #db7a4e;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
 }
 
 .hero-card {
@@ -79,7 +78,6 @@ a {
   justify-content: space-between;
   background-color: #fefaf5;
   padding: 2.5rem;
-  border: 1px solid blue;
   height: 25rem;
 }
 
@@ -108,10 +106,12 @@ a {
 .hero-card__button {
   background-color: #db7a4e;
   color: #ffffff;
-  border-radius: 5%;
-  width: 7rem;
-  height: 1.8rem;
-  border: 0.0625rem solid #db7a4e;
+  border-radius: 10%/50%;
+  text-align: center;
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 200;
+  vertical-align: center;
 }
 
 .hero-image {

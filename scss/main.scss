@@ -36,7 +36,6 @@ $activities: #fefaf5;
 
 .navbar {
   @include flexJustify(space-between);
-  border: 1px solid red;
   font-family: "Verdana";
   height: 4rem;
 }
@@ -73,14 +72,13 @@ $activities: #fefaf5;
 
 .navbar-links__list--curent {
   border-bottom: 0.2rem solid $active-page;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
 }
 
 .hero-card {
   @include flexJustify(space-between);
   background-color: $hero-back;
   padding: 2.5rem;
-  border: 1px solid blue;
   height: 25rem;
 }
 
@@ -106,10 +104,12 @@ $activities: #fefaf5;
 .hero-card__button {
   background-color: $hero-buton;
   color: $background;
-  border-radius: 5%;
-  width: 7rem;
-  height: 1.8rem;
-  border: 0.0625rem solid $hero-buton;
+  border-radius: 10% / 50%;
+  text-align: center;
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 200;
+  vertical-align: center;
 }
 
 .hero-image {
