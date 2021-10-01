@@ -13,6 +13,9 @@ $hero-buton: #db7a4e;
 $home-title: #335576;
 $activities: #fefaf5;
 
+$dest-card-height: 25rem;
+$dest-card-width: 17rem;
+
 @mixin flexCenter($direction) {
   display: flex;
   justify-content: center;
@@ -44,6 +47,7 @@ $activities: #fefaf5;
   text-align: center;
   color: $logo-wordmark;
   padding-left: 6.5rem;
+  padding-bottom: 0.5rem;
   font-weight: 300;
 }
 
@@ -120,11 +124,10 @@ $activities: #fefaf5;
 
 .recomendations {
   background-color: white;
-  border: 1px solid yellow;
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  position: relative;
+  padding-bottom: 5rem;
 }
 
 .recomendations_title {
@@ -134,19 +137,23 @@ $activities: #fefaf5;
 }
 
 .card-container {
-  @include flexJustify(space-around);
-  position: relative;
-  padding: 1rem 18rem;
+  @include flexJustify(space-between);
+  padding: 0 13rem;
 }
 
 .destination-card {
   border: 0.0625rem solid rgba($color: #000000, $alpha: 0.2);
   border-radius: 0.3125rem;
   overflow: hidden;
-  height: 23rem;
-  width: 15rem;
+  height: $dest-card-height;
+  width: $dest-card-width;
   position: relative;
   box-shadow: 0 0.25rem 0.25rem rgba($color: black, $alpha: 0.2);
+
+  &__image {
+    height: $dest-card-height;
+    width: $dest-card-width;
+  }
 }
 
 .destination-card__name {
@@ -157,7 +164,63 @@ $activities: #fefaf5;
   bottom: 1rem;
 }
 
-.destination-card__image {
-  height: 23rem;
-  width: 15rem;
+.footer {
+  @include flexJustify(space-evenly);
+  padding: 2rem 4rem;
+  background-color: $footer;
+}
+
+.footer-title {
+  color: $footer-title;
+  padding: 1rem 0 2rem 0;
+
+  &__sub {
+    color: $footer-subtitle;
+    font-size: 0.75rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+  }
+}
+
+.footer-details {
+  color: $footer-title;
+}
+
+.contact {
+  @include flexLeft(column);
+  margin-left: -3rem;
+}
+
+.hours {
+  @include flexLeft(column);
+
+  &__date-time {
+    @include flexLeft(row);
+    justify-content: space-between;
+    margin-left: -1.2rem;
+
+    &--dif {
+      padding: 0 1.2rem;
+    }
+  }
+}
+
+.socials {
+  @include flexLeft(column);
+}
+
+.icons {
+  height: 2rem;
+  width: 2rem;
+  padding: 0 1rem;
+
+  &-facebook {
+    width: 1rem;
+  }
+}
+
+.social-icon-wrap {
+  @include flexLeft(row);
+  margin-left: -1rem;
+  padding-top: 0.5rem;
 }
