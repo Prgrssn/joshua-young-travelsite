@@ -1,11 +1,4 @@
 @import url(./partials/global);
-h1,
-h2,
-h3,
-p {
-  color: #335576;
-}
-
 .navbar {
   display: flex;
   align-items: center;
@@ -20,6 +13,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   background-color: #fefaf5;
+  padding: 4rem;
   border: 1px solid blue;
 }
 
@@ -29,6 +23,21 @@ p {
   justify-content: space-around;
   flex-direction: column;
   text-align: left;
+  max-height: 25rem;
+  max-width: 28.125rem;
+  padding: 1rem;
+  color: #335576;
+}
+
+.hero-card__paragraph {
+  padding-bottom: 1rem;
+}
+
+.hero-card__button {
+  background-color: #db7a4e;
+  color: #ffffff;
+  border-radius: 5%;
+  padding: 0 1.25rem;
 }
 
 .hero-image {

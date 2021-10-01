@@ -34,13 +34,6 @@ $activities: #fefaf5;
   flex-direction: $direction;
 }
 
-h1,
-h2,
-h3,
-p {
-  color: $logo-wordmark;
-}
-
 .navbar {
   @include flexJustify(space-between);
   border: 1px solid red;
@@ -49,12 +42,28 @@ p {
 .hero-card {
   @include flexJustify(space-around);
   background-color: $hero-back;
+  padding: 4rem;
   border: 1px solid blue;
 }
 
 .hero-card__description {
   @include flexLeft(column);
   text-align: left;
+  max-height: 25rem;
+  max-width: 28.125rem;
+  padding: 1rem;
+  color: $hero-slogan;
+}
+
+.hero-card__paragraph {
+  padding-bottom: 1rem;
+}
+
+.hero-card__button {
+  background-color: $hero-buton;
+  color: $background;
+  border-radius: 5%;
+  padding: 0 1.25rem;
 }
 
 .hero-image {
