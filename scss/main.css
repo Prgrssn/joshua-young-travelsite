@@ -1,20 +1,91 @@
-@import url(./partials/global);
+html {
+  width: 1280vw;
+}
+
+* {
+  box-sizing: border box;
+  margin: 0;
+  padding: 0;
+  font-family: "Verdana";
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
   border: 1px solid red;
+  font-family: "Verdana";
+  height: 4rem;
+}
+
+.navbar-title {
+  text-align: center;
+  color: #335576;
+  padding-left: 6.3rem;
+  font-weight: 300;
+}
+
+.navbar-links {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar-links__list {
+  text-decoration: none;
+  padding-right: 6rem;
+}
+
+.navbar-links__list--item {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.navbar-links__list--anchor {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.navbar-links__list--curent {
+  border-bottom: 0.2rem solid #db7a4e;
+  padding-bottom: 0.8rem;
 }
 
 .hero-card {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #fefaf5;
-  padding: 4rem;
+  padding: 2.5rem;
   border: 1px solid blue;
+  height: 25rem;
+}
+
+.hero-card__slogan {
+  font-weight: 700;
+  padding-bottom: 0.25rem;
 }
 
 .hero-card__description {
@@ -24,25 +95,29 @@
   flex-direction: column;
   text-align: left;
   max-height: 25rem;
-  max-width: 28.125rem;
-  padding: 1rem;
+  width: 40rem;
+  padding: 1rem 1rem 1rem 4rem;
   color: #335576;
 }
 
 .hero-card__paragraph {
-  padding-bottom: 1rem;
+  padding: 1.5rem 0;
+  color: #335576;
 }
 
 .hero-card__button {
   background-color: #db7a4e;
   color: #ffffff;
   border-radius: 5%;
-  padding: 0 1.25rem;
+  width: 7rem;
+  height: 1.8rem;
+  border: 0.0625rem solid #db7a4e;
 }
 
 .hero-image {
-  max-height: 25rem;
-  max-width: 25rem;
+  max-height: 29rem;
+  max-width: 29rem;
+  padding-right: 4rem;
 }
 
 .recomendations {

@@ -1,4 +1,4 @@
-@import url(./partials/global);
+@use "../scss/partials/global" as *;
 
 // Colors
 $background: #ffffff;
@@ -37,38 +37,85 @@ $activities: #fefaf5;
 .navbar {
   @include flexJustify(space-between);
   border: 1px solid red;
+  font-family: "Verdana";
+  height: 4rem;
+}
+
+.navbar-title {
+  text-align: center;
+  color: $logo-wordmark;
+  padding-left: 6.3rem;
+  font-weight: 300;
+}
+
+.navbar-links {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar-links__list {
+  text-decoration: none;
+  padding-right: 6rem;
+}
+
+.navbar-links__list--item {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.navbar-links__list--anchor {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.navbar-links__list--curent {
+  border-bottom: 0.2rem solid $active-page;
+  padding-bottom: 0.8rem;
 }
 
 .hero-card {
-  @include flexJustify(space-around);
+  @include flexJustify(space-between);
   background-color: $hero-back;
-  padding: 4rem;
+  padding: 2.5rem;
   border: 1px solid blue;
+  height: 25rem;
+}
+
+.hero-card__slogan {
+  font-weight: 700;
+  padding-bottom: 00.25rem;
 }
 
 .hero-card__description {
   @include flexLeft(column);
   text-align: left;
   max-height: 25rem;
-  max-width: 28.125rem;
-  padding: 1rem;
+  width: 40rem;
+  padding: 1rem 1rem 1rem 4rem;
   color: $hero-slogan;
 }
 
 .hero-card__paragraph {
-  padding-bottom: 1rem;
+  padding: 1.5rem 0;
+  color: $hero-slogan;
 }
 
 .hero-card__button {
   background-color: $hero-buton;
   color: $background;
   border-radius: 5%;
-  padding: 0 1.25rem;
+  width: 7rem;
+  height: 1.8rem;
+  border: 0.0625rem solid $hero-buton;
 }
 
 .hero-image {
-  max-height: 25rem;
-  max-width: 25rem;
+  max-height: 29rem;
+  max-width: 29rem;
+  padding-right: 4rem;
 }
 
 .recomendations {
