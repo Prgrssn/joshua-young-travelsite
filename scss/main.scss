@@ -1,20 +1,74 @@
-@use "./partials/global";
+@import url(./partials/global);
 
-* {
-  box-sizing: border box;
-  margin: 0;
-  padding: 0;
-  font-family: "Verdana";
+// Colors
+$background: #ffffff;
+$logo-wordmark: #335576;
+$active-page: #db7a4e;
+$footer: #fefaf5;
+$footer-title: #335576;
+$footer-subtitle: #db7a4e;
+$hero-back: #fefaf5;
+$hero-slogan: #335576;
+$hero-buton: #db7a4e;
+$home-title: #335576;
+$activities: #fefaf5;
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
+@mixin flexJustify($justify) {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: $justify;
+}
+
+@mixin flexLeft($direction) {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: $direction;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: $logo-wordmark;
 }
 
 .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  @include flexJustify(space-between);
+  border: 1px solid red;
+}
+
+.hero-card {
+  @include flexJustify(space-around);
+  background-color: $hero-back;
+  border: 1px solid blue;
+}
+
+.hero-card__description {
+  @include flexLeft(column);
+  text-align: left;
+}
+
+.hero-image {
+  max-height: 25rem;
+  max-width: 25rem;
+}
+
+.recomendations {
+  background-color: white;
+  border: 1px solid yellow;
+}
+
+.destination-card {
+  border-radius: 0.3125rem;
+  border: 1px solid rgba($color: #000000, $alpha: 0.2);
+  box-shadow: 0rem 0.25rem 0.25rem rgba($color: #000000, $alpha: 0.2);
 }

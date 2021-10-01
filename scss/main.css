@@ -1,30 +1,48 @@
-* {
-  box-sizing: border box;
-  margin: 0;
-  padding: 0;
-  font-family: "Verdana";
-}
-
-body {
-  height: 100vh;
-  width: 100vw;
-}
-
-* {
-  box-sizing: border box;
-  margin: 0;
-  padding: 0;
-  font-family: "Verdana";
-}
-
-body {
-  height: 100vh;
-  width: 100vw;
+@import url(./partials/global);
+h1,
+h2,
+h3,
+p {
+  color: #335576;
 }
 
 .navbar {
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  border: 1px solid red;
+}
+
+.hero-card {
+  display: flex;
   align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #fefaf5;
+  border: 1px solid blue;
+}
+
+.hero-card__description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: left;
+}
+
+.hero-image {
+  max-height: 25rem;
+  max-width: 25rem;
+}
+
+.recomendations {
+  background-color: white;
+  border: 1px solid yellow;
+}
+
+.destination-card {
+  border-radius: 0.3125rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=main.css.map */
