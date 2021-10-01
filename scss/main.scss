@@ -43,7 +43,7 @@ $activities: #fefaf5;
 .navbar-title {
   text-align: center;
   color: $logo-wordmark;
-  padding-left: 6.3rem;
+  padding-left: 6.5rem;
   font-weight: 300;
 }
 
@@ -121,10 +121,43 @@ $activities: #fefaf5;
 .recomendations {
   background-color: white;
   border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.recomendations_title {
+  color: $footer-title;
+  vertical-align: left;
+  padding: 3rem 1rem 2rem 6.5rem;
+}
+
+.card-container {
+  @include flexJustify(space-around);
+  position: relative;
+  padding: 1rem 18rem;
 }
 
 .destination-card {
+  border: 0.0625rem solid rgba($color: #000000, $alpha: 0.2);
   border-radius: 0.3125rem;
-  border: 1px solid rgba($color: #000000, $alpha: 0.2);
-  box-shadow: 0rem 0.25rem 0.25rem rgba($color: #000000, $alpha: 0.2);
+  overflow: hidden;
+  height: 23rem;
+  width: 15rem;
+  position: relative;
+  box-shadow: 0 0.25rem 0.25rem rgba($color: black, $alpha: 0.2);
+}
+
+.destination-card__name {
+  color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.destination-card__image {
+  height: 23rem;
+  width: 15rem;
 }
