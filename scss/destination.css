@@ -31,8 +31,11 @@ a {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Verdana";
   height: 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .navbar-title {
@@ -74,7 +77,6 @@ a {
 .destination-section {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .destination-image {
@@ -88,7 +90,7 @@ a {
   color: white;
   position: absolute;
   left: 5.5rem;
-  top: 4rem;
+  top: 6rem;
 }
 
 .card-container {
@@ -97,7 +99,7 @@ a {
   align-content: center;
   justify-content: center;
   position: absolute;
-  top: 12rem;
+  top: 14rem;
   left: 14rem;
 }
 
@@ -134,7 +136,6 @@ a {
   align-items: center;
   padding: 2rem 10rem;
   background-color: #fefaf5;
-  margin-left: 2rem;
 }
 
 .footer-title {

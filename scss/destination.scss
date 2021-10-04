@@ -27,8 +27,11 @@
 
 .navbar {
   @include flexJustify(space-between);
-  font-family: "Verdana";
   height: 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .navbar-title {
@@ -72,9 +75,6 @@
 .destination-section {
   display: flex;
   flex-direction: column;
-  position: relative;
-  //   height: 75vh;
-  //   width: 100vw;
 }
 
 .destination-image {
@@ -87,7 +87,7 @@
   color: white;
   position: absolute;
   left: 5.5rem;
-  top: 4rem;
+  top: 6rem;
 }
 
 .card-container {
@@ -96,7 +96,7 @@
   align-content: center;
   justify-content: center;
   position: absolute;
-  top: 12rem;
+  top: 14rem;
   left: 14rem;
 }
 
@@ -133,7 +133,6 @@
   align-items: center;
   padding: 2rem 10rem;
   background-color: $footer;
-  margin-left: 2rem;
 }
 
 .footer-title {

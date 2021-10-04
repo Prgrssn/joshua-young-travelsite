@@ -25,81 +25,85 @@
   @include flexJustify(space-between);
   font-family: "Verdana";
   height: 4rem;
-}
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $background;
 
-.navbar-title {
-  text-align: center;
-  color: $logo-wordmark;
-  padding-left: 5.5rem;
-  padding-bottom: 0.5rem;
-  font-weight: 300;
+  &__title {
+    text-align: center;
+    color: $logo-wordmark;
+    padding-left: 5.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 300;
+  }
 }
 
 .navbar-links {
   display: inline-block;
   text-decoration: none;
-}
 
-.navbar-links__list {
-  text-decoration: none;
-  padding-right: 5.5rem;
-}
+  &__list {
+    text-decoration: none;
+    padding-right: 5.5rem;
 
-.navbar-links__list--item {
-  text-decoration: none;
-  display: inline-block;
-  padding-right: 1rem;
-}
+    &--item {
+      text-decoration: none;
+      display: inline-block;
+      padding-right: 1rem;
+    }
 
-.navbar-links__list--anchor {
-  text-decoration: none;
-  color: black;
-  font-size: 1rem;
-  font-weight: 300;
-}
+    &--anchor {
+      text-decoration: none;
+      color: black;
+      font-size: 1rem;
+      font-weight: 300;
+    }
 
-.navbar-links__list--curent {
-  border-bottom: 0.2rem solid $active-page;
-  padding-bottom: 0.5rem;
+    &--curent {
+      border-bottom: 0.2rem solid $active-page;
+      padding-bottom: 0.5rem;
+    }
+  }
 }
 
 .hero-card {
   @include flexJustify(space-between);
   background-color: $hero-back;
-  padding: 1.3rem;
+  padding: 4rem 1.3rem 1.3rem 1.3rem;
   height: 25rem;
-}
 
-.hero-card__slogan {
-  font-weight: 700;
-  padding-bottom: 00.25rem;
-}
+  &__slogan {
+    font-weight: 700;
+    padding-bottom: 00.25rem;
+  }
 
-.hero-card__description {
-  @include flexLeft(column);
-  text-align: left;
-  max-height: 25rem;
-  width: 40rem;
-  padding: 1rem 1rem 1rem 4rem;
-  color: $hero-slogan;
-}
+  &__description {
+    @include flexLeft(column);
+    text-align: left;
+    max-height: 25rem;
+    width: 40rem;
+    padding: 1rem 1rem 1rem 4rem;
+    color: $hero-slogan;
+  }
 
-.hero-card__paragraph {
-  padding: 1.5rem 0;
-  color: $hero-slogan;
-  font-weight: 200;
-  font-size: 1rem;
-}
+  &__paragraph {
+    padding: 1.5rem 0;
+    color: $hero-slogan;
+    font-weight: 200;
+    font-size: 1rem;
+  }
 
-.hero-card__button {
-  background-color: $hero-buton;
-  color: $background;
-  border-radius: 10% / 50%;
-  text-align: center;
-  padding: 0.5rem 2.5rem;
-  font-size: 1rem;
-  font-weight: 200;
-  vertical-align: center;
+  &__button {
+    background-color: $hero-buton;
+    color: $background;
+    border-radius: 10% / 50%;
+    text-align: center;
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 200;
+    vertical-align: center;
+  }
 }
 
 .hero-image {
@@ -109,17 +113,17 @@
 }
 
 .recomendations {
-  background-color: white;
+  background-color: $background;
   display: flex;
   flex-direction: column;
   position: relative;
   padding-bottom: 5rem;
-}
 
-.recomendations_title {
-  color: $footer-title;
-  vertical-align: left;
-  padding: 3rem 1rem 2rem 5.5rem;
+  &__title {
+    color: $footer-title;
+    vertical-align: left;
+    padding: 3rem 1rem 2rem 5.5rem;
+  }
 }
 
 .card-container {
@@ -140,36 +144,36 @@
     height: $dest-card-height;
     width: $dest-card-width;
   }
-}
 
-.destination-card__name {
-  color: #ffffff;
-  position: absolute;
-  z-index: 1;
-  right: 1rem;
-  bottom: 1rem;
+  &__name {
+    color: $background;
+    position: absolute;
+    z-index: 1;
+    right: 1rem;
+    bottom: 1rem;
+  }
 }
 
 .footer {
   @include flexJustify(space-evenly);
   padding: 2rem 4rem;
   background-color: $footer;
-}
 
-.footer-title {
-  color: $footer-title;
-  padding: 1rem 0 2rem 0;
+  &__title {
+    color: $footer-title;
+    padding: 1rem 0 2rem 0;
 
-  &__sub {
-    color: $footer-subtitle;
-    font-size: 0.75rem;
-    font-weight: 300;
-    padding-bottom: 1rem;
+    &--sub {
+      color: $footer-subtitle;
+      font-size: 0.75rem;
+      font-weight: 300;
+      padding-bottom: 1rem;
+    }
   }
-}
 
-.footer-details {
-  color: $footer-title;
+  &__details {
+    color: $footer-title;
+  }
 }
 
 .contact {

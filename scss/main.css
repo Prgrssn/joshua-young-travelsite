@@ -33,9 +33,12 @@ a {
   justify-content: space-between;
   font-family: "Verdana";
   height: 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
 }
-
-.navbar-title {
+.navbar__title {
   text-align: center;
   color: #335576;
   padding-left: 5.5rem;
@@ -47,25 +50,21 @@ a {
   display: inline-block;
   text-decoration: none;
 }
-
 .navbar-links__list {
   text-decoration: none;
   padding-right: 5.5rem;
 }
-
 .navbar-links__list--item {
   text-decoration: none;
   display: inline-block;
   padding-right: 1rem;
 }
-
 .navbar-links__list--anchor {
   text-decoration: none;
   color: black;
   font-size: 1rem;
   font-weight: 300;
 }
-
 .navbar-links__list--curent {
   border-bottom: 0.2rem solid #db7a4e;
   padding-bottom: 0.5rem;
@@ -77,15 +76,13 @@ a {
   flex-direction: row;
   justify-content: space-between;
   background-color: #fefaf5;
-  padding: 1.3rem;
+  padding: 4rem 1.3rem 1.3rem 1.3rem;
   height: 25rem;
 }
-
 .hero-card__slogan {
   font-weight: 700;
   padding-bottom: 0.25rem;
 }
-
 .hero-card__description {
   display: flex;
   align-items: flex-start;
@@ -97,14 +94,12 @@ a {
   padding: 1rem 1rem 1rem 4rem;
   color: #335576;
 }
-
 .hero-card__paragraph {
   padding: 1.5rem 0;
   color: #335576;
   font-weight: 200;
   font-size: 1rem;
 }
-
 .hero-card__button {
   background-color: #db7a4e;
   color: #ffffff;
@@ -123,14 +118,13 @@ a {
 }
 
 .recomendations {
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   position: relative;
   padding-bottom: 5rem;
 }
-
-.recomendations_title {
+.recomendations__title {
   color: #335576;
   vertical-align: left;
   padding: 3rem 1rem 2rem 5.5rem;
@@ -157,7 +151,6 @@ a {
   height: 25rem;
   width: 17rem;
 }
-
 .destination-card__name {
   color: #ffffff;
   position: absolute;
@@ -174,19 +167,17 @@ a {
   padding: 2rem 4rem;
   background-color: #fefaf5;
 }
-
-.footer-title {
+.footer__title {
   color: #335576;
   padding: 1rem 0 2rem 0;
 }
-.footer-title__sub {
+.footer__title--sub {
   color: #db7a4e;
   font-size: 0.75rem;
   font-weight: 300;
   padding-bottom: 1rem;
 }
-
-.footer-details {
+.footer__details {
   color: #335576;
 }
 
