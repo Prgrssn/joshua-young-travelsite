@@ -69,4 +69,136 @@ a {
 .navbar-links__list--curent {
   border-bottom: 0.2rem solid #db7a4e;
   padding-bottom: 0.5rem;
+}
+
+.destination-section__hawaii {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background-image: url(../assets/images/hawaii.jpg);
+  height: 85vh;
+  width: 100vw;
+}
+
+.destination-name {
+  font-size: 4rem;
+  color: white;
+  position: absolute;
+  left: 6.3rem;
+  top: 4rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding-top: 12rem;
+}
+
+.destination-card__schedule {
+  border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3125rem;
+  height: 23rem;
+  width: 15rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  background-color: white;
+  margin: 0 1rem;
+}
+
+.schedule-day {
+  border-bottom: 2px solid black;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 0.7rem;
+  margin: 0 1rem;
+}
+.schedule-day__activity {
+  font-size: 1rem;
+  background-color: #fefaf5;
+  margin: 1rem 1rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem 4rem;
+  background-color: #fefaf5;
+}
+
+.footer-title {
+  color: #335576;
+  padding: 1rem 0 2rem 0;
+}
+.footer-title__sub {
+  color: #db7a4e;
+  font-size: 0.75rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.footer-details {
+  color: #335576;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: -3rem;
+}
+
+.hours {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.hours__date-time {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: -1.2rem;
+}
+.hours__date-time--dif {
+  padding: 0 1.2rem;
+}
+
+.socials {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.icons {
+  height: 2rem;
+  width: 2rem;
+  padding: 0 1rem;
+}
+.icons-facebook {
+  width: 1rem;
+}
+
+.social-icon-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-left: -1rem;
+  padding-top: 0.5rem;
 }/*# sourceMappingURL=destination.css.map */

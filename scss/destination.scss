@@ -7,6 +7,24 @@
   justify-content: $justify;
 }
 
+@mixin hero-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: max-content;
+  height: min-content;
+}
+
+@mixin flexLeft($direction) {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: $direction;
+}
+
+// navbar
+
 .navbar {
   @include flexJustify(space-between);
   font-family: "Verdana";
@@ -47,4 +65,118 @@
 .navbar-links__list--curent {
   border-bottom: 0.2rem solid $active-page;
   padding-bottom: 0.5rem;
+}
+
+//  destination schedule
+
+.destination-section__hawaii {
+  @include hero-image();
+  background-image: url(../assets/images/hawaii.jpg);
+  height: 85vh;
+  width: 100vw;
+}
+
+.destination-name {
+  font-size: 4rem;
+  color: white;
+  position: absolute;
+  left: 6.3rem;
+  top: 4rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding-top: 12rem;
+}
+
+.destination-card__schedule {
+  border: 0.0625rem solid rgba($color: #000000, $alpha: 0.2);
+  border-radius: 0.3125rem;
+  height: 23rem;
+  width: 15rem;
+  box-shadow: 0 0.25rem 0.25rem rgba($color: black, $alpha: 0.2);
+  background-color: white;
+  margin: 0 1rem;
+}
+
+.schedule-day {
+  border-bottom: 2px solid black;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 0.7rem;
+  margin: 0 1rem;
+
+  &__activity {
+    font-size: 1rem;
+    background-color: $footer;
+    margin: 1rem 1rem;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+
+// footer
+
+.footer {
+  @include flexJustify(space-evenly);
+  padding: 2rem 4rem;
+  background-color: $footer;
+}
+
+.footer-title {
+  color: $footer-title;
+  padding: 1rem 0 2rem 0;
+
+  &__sub {
+    color: $footer-subtitle;
+    font-size: 0.75rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+  }
+}
+
+.footer-details {
+  color: $footer-title;
+}
+
+.contact {
+  @include flexLeft(column);
+  margin-left: -3rem;
+}
+
+.hours {
+  @include flexLeft(column);
+
+  &__date-time {
+    @include flexLeft(row);
+    justify-content: space-between;
+    margin-left: -1.2rem;
+
+    &--dif {
+      padding: 0 1.2rem;
+    }
+  }
+}
+
+.socials {
+  @include flexLeft(column);
+}
+
+.icons {
+  height: 2rem;
+  width: 2rem;
+  padding: 0 1rem;
+
+  &-facebook {
+    width: 1rem;
+  }
+}
+
+.social-icon-wrap {
+  @include flexLeft(row);
+  margin-left: -1rem;
+  padding-top: 0.5rem;
 }

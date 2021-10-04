@@ -1,10 +1,5 @@
 @use "../scss/partials/global" as *;
 
-// Colors
-
-$dest-card-height: 25rem;
-$dest-card-width: 17rem;
-
 @mixin flexCenter($direction) {
   display: flex;
   justify-content: center;
