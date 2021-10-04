@@ -71,27 +71,23 @@ a {
   padding-bottom: 0.5rem;
 }
 
-.destination-section__hawaii {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.destination-section {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  background-image: url(../assets/images/hawaii.jpg);
-  height: 85vh;
-  width: 100vw;
+}
+
+.destination-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 45rem;
 }
 
 .destination-name {
   font-size: 4rem;
   color: white;
   position: absolute;
-  left: 6.3rem;
+  left: 7rem;
   top: 4rem;
 }
 
@@ -100,7 +96,9 @@ a {
   flex-direction: row;
   align-content: center;
   justify-content: center;
-  padding-top: 12rem;
+  position: absolute;
+  top: 12rem;
+  left: 14rem;
 }
 
 .destination-card__schedule {
@@ -133,8 +131,10 @@ a {
   align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 2rem 4rem;
+  align-items: center;
+  padding: 2rem 10rem;
   background-color: #fefaf5;
+  margin-left: 2rem;
 }
 
 .footer-title {
@@ -186,12 +186,13 @@ a {
 }
 
 .icons {
-  height: 2rem;
-  width: 2rem;
-  padding: 0 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0.5rem 2rem 0rem 2rem;
 }
 .icons-facebook {
-  width: 1rem;
+  width: 0.9rem;
+  padding-top: 0.25rem;
 }
 
 .social-icon-wrap {
@@ -199,6 +200,6 @@ a {
   align-items: flex-start;
   justify-content: space-around;
   flex-direction: row;
-  margin-left: -1rem;
-  padding-top: 0.5rem;
+  margin-left: -2rem;
+  padding-top: 1rem;
 }/*# sourceMappingURL=destination.css.map */
