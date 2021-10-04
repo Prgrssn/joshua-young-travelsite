@@ -37,6 +37,7 @@ a {
   top: 0;
   width: 100%;
   background-color: #ffffff;
+  z-index: 999;
 }
 .navbar__title {
   text-align: center;
@@ -150,6 +151,9 @@ a {
 .destination-card__image {
   height: 25rem;
   width: 17rem;
+}
+.destination-card__image:hover {
+  opacity: 0.7;
 }
 .destination-card__name {
   color: #ffffff;

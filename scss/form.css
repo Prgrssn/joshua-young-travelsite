@@ -1,0 +1,72 @@
+* {
+  box-sizing: border box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Verdana";
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Verdana";
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 999;
+}
+.navbar__title {
+  text-align: center;
+  color: #335576;
+  padding-left: 5.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.navbar-links {
+  display: inline-block;
+  text-decoration: none;
+}
+.navbar-links__list {
+  text-decoration: none;
+  padding-right: 5.5rem;
+}
+.navbar-links__list--item {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 1rem;
+}
+.navbar-links__list--anchor {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.navbar-links__list--curent {
+  border-bottom: 0.2rem solid #db7a4e;
+  padding-bottom: 0.5rem;
+}/*# sourceMappingURL=form.css.map */

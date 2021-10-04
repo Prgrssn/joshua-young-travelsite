@@ -1,0 +1,69 @@
+@use "../scss/partials/global" as *;
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flexJustify($justify) {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: $justify;
+}
+
+@mixin flexLeft($direction) {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: $direction;
+}
+
+.navbar {
+  @include flexJustify(space-between);
+  font-family: "Verdana";
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $background;
+  z-index: 999;
+
+  &__title {
+    text-align: center;
+    color: $logo-wordmark;
+    padding-left: 5.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 300;
+  }
+}
+
+.navbar-links {
+  display: inline-block;
+  text-decoration: none;
+
+  &__list {
+    text-decoration: none;
+    padding-right: 5.5rem;
+
+    &--item {
+      text-decoration: none;
+      display: inline-block;
+      padding-right: 1rem;
+    }
+
+    &--anchor {
+      text-decoration: none;
+      color: black;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    &--curent {
+      border-bottom: 0.2rem solid $active-page;
+      padding-bottom: 0.5rem;
+    }
+  }
+}
