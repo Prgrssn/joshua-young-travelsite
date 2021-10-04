@@ -38,7 +38,7 @@ a {
 .navbar-title {
   text-align: center;
   color: #335576;
-  padding-left: 6.5rem;
+  padding-left: 5.5rem;
   padding-bottom: 0.5rem;
   font-weight: 300;
 }
@@ -50,7 +50,7 @@ a {
 
 .navbar-links__list {
   text-decoration: none;
-  padding-right: 6rem;
+  padding-right: 5.5rem;
 }
 
 .navbar-links__list--item {
@@ -87,7 +87,7 @@ a {
   font-size: 4rem;
   color: white;
   position: absolute;
-  left: 7rem;
+  left: 5.5rem;
   top: 4rem;
 }
 
