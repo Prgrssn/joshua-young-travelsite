@@ -27,50 +27,49 @@
 
 .navbar {
   @include flexJustify(space-between);
+  font-family: "Verdana";
   height: 4rem;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #ffffff;
-}
+  background-color: $background;
 
-.navbar-title {
-  text-align: center;
-  color: $logo-wordmark;
-  padding-left: 5.5rem;
-  padding-bottom: 0.5rem;
-  font-weight: 300;
+  &__title {
+    text-align: center;
+    color: $logo-wordmark;
+    padding-left: 5.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 300;
+  }
 }
 
 .navbar-links {
   display: inline-block;
   text-decoration: none;
-}
 
-.navbar-links__list {
-  text-decoration: none;
-  padding-right: 5.5rem;
-}
+  &__list {
+    text-decoration: none;
+    padding-right: 5.5rem;
 
-.navbar-links__list--item {
-  text-decoration: none;
-  display: inline-block;
-  padding-right: 1rem;
-}
+    &--item {
+      text-decoration: none;
+      display: inline-block;
+      padding-right: 1rem;
+    }
 
-.navbar-links__list--anchor {
-  text-decoration: none;
-  color: black;
-  font-size: 1rem;
-  font-weight: 300;
-}
+    &--anchor {
+      text-decoration: none;
+      color: black;
+      font-size: 1rem;
+      font-weight: 300;
+    }
 
-.navbar-links__list--curent {
-  border-bottom: 0.2rem solid $active-page;
-  padding-bottom: 0.5rem;
+    &--curent {
+      border-bottom: 0.2rem solid $active-page;
+      padding-bottom: 0.5rem;
+    }
+  }
 }
-
-//  destination schedule
 
 .destination-section {
   display: flex;
@@ -133,22 +132,22 @@
   align-items: center;
   padding: 2rem 10rem;
   background-color: $footer;
-}
 
-.footer-title {
-  color: $footer-title;
-  padding: 1rem 0 2rem 0;
+  &__title {
+    color: $footer-title;
+    padding: 1rem 0 2rem 0;
 
-  &__sub {
-    color: $footer-subtitle;
-    font-size: 0.75rem;
-    font-weight: 300;
-    padding-bottom: 1rem;
+    &--sub {
+      color: $footer-subtitle;
+      font-size: 0.75rem;
+      font-weight: 300;
+      padding-bottom: 1rem;
+    }
   }
-}
 
-.footer-details {
-  color: $footer-title;
+  &__details {
+    color: $footer-title;
+  }
 }
 
 .contact {
