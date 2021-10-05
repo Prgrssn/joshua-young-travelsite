@@ -23,8 +23,6 @@
   flex-direction: $direction;
 }
 
-// navbar
-
 .navbar {
   @include flexJustify(space-between);
   font-family: "Verdana";
