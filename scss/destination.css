@@ -37,6 +37,7 @@ a {
   top: 0;
   width: 100%;
   background-color: #ffffff;
+  z-index: 1;
 }
 .navbar__title {
   text-align: center;

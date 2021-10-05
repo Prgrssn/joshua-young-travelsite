@@ -33,6 +33,7 @@
   top: 0;
   width: 100%;
   background-color: $background;
+  z-index: 1;
 
   &__title {
     text-align: center;
