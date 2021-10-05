@@ -4,39 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scss/partials/_global.scss" />
+    <link rel="stylesheet" href="../scss/form.css" />
     <title>Travel Form</title>
   </head>
-  <body>
+  <header class="navbar">
     <nav class="navbar">
       <div class="navbar__title">
-        <a class="navbar__title" href="./index.html"><h2>Travel Site</h2></a>
+        <a class="navbar__title" href="../index.html"><h2>Travel Site</h2></a>
       </div>
       <div class="navbar-links">
         <ul class="navbar-links__list">
           <li class="navbar-links__list--item">
-            <a
-              class="navbar-links__anchor navbar-links__list--curent"
-              href="./index.html"
-              >Home</a
-            >
+            <a class="navbar-links__anchor" href="../index.html">Home</a>
           </li>
           <li class="navbar-links__list--item">
-            <a class="navbar-links__anchor" href="./pages/hawaii.html"
-              >Hawaii</a
-            >
+            <a class="navbar-links__anchor" href="./hawaii.html">Hawaii</a>
           </li>
           <li class="navbar-links__list--item">
-            <a class="navbar-links__anchor" href="./pages/iceland.html"
-              >Iceland</a
-            >
+            <a class="navbar-links__anchor" href="./iceland.html">Iceland</a>
           </li>
           <li class="navbar-links__list--item">
-            <a class="navbar-links__anchor" href="./pages/greece.html"
-              >Greece</a
-            >
+            <a class="navbar-links__anchor" href="./greece.html">Greece</a>
           </li>
         </ul>
       </div>
     </nav>
+  </header>
+  <body>
+    <section class="form-section">
+      <div class="form-container">
+        <h1 class="title">Booking Form</h1>
+        <p class="description">
+          Let's get you on your way! Please fill this form out to the best of
+          your ability =)
+        </p>
+        <form>
+          <label class="label">First Name</label>
+          <input type="text" placeholder="Enter your First Name" />
+
+          <label class="label">Last Name</label>
+          <input type="text" placeholder="Enter your Last Name" />
+
+          <label class="label">Email</label>
+          <input type="text" placeholder="Enter your email" />
+
+          <label class="label">Phone Number</label>
+          <input type="text" placeholder="Enter your phone number" />
+
+          <label class="label">Party Size</label>
+          <input type="text" placeholder="How many people will be traveling?" />
+
+          <label class="label">Destination</label>
+          <input type="text" placeholder="Where would you like to go?" />
+
+          <label class="label">Comments</label>
+          <textarea
+            placeholder="Anything we should know?"
+            style="height: 150px"
+          >
+          </textarea>
+
+          <button class="button">Submit</button>
+        </form>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="Contact">
+        <h3 class="footer__title">CONTACT</h3>
+        <h4 class="footer__title--sub">EMAIL</h4>
+        <p class="footer__details">info@travelsite.com</p>
+      </div>
+      <div class="hours">
+        <h3 class="footer__title">HOURS</h3>
+        <div class="hours__date-time">
+          <div class="hours__date-time--dif">
+            <h4 class="footer__title--sub">Monday - Friday</h4>
+            <p class="footer__details">9:00 AM - 5:00 PM</p>
+          </div>
+          <div class="hours__date-time--dif">
+            <h4 class="footer__title--sub">Saturday</h4>
+            <p class="footer__details">10:00 AM - 4:00 PM</p>
+          </div>
+          <div class="hours__date-time--dif">
+            <h4 class="footer__title--sub">Sunday</h4>
+            <p class="footer__details">Closed</p>
+          </div>
+        </div>
+      </div>
+      <div class="socials">
+        <h3 class="footer__title">SOCIAL</h3>
+        <div class="social-icon-wrap">
+          <img
+            class="icons"
+            src="../assets/icons/icon-instagram.png"
+            alt="instagram"
+          />
+          <img
+            class="icons-facebook"
+            src="../assets/icons/icon-facebook.png"
+            alt="facebook"
+          />
+          <img
+            class="icons"
+            src="../assets/icons/icon-twitter.png"
+            alt="twitter"
+          />
+        </div>
+      </div>
+    </div>
   </body>
 </html>

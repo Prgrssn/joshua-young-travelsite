@@ -21,6 +21,10 @@
   flex-direction: $direction;
 }
 
+body {
+  background-color: $footer;
+}
+
 .navbar {
   @include flexJustify(space-between);
   font-family: "Verdana";
@@ -29,7 +33,6 @@
   top: 0;
   width: 100%;
   background-color: $background;
-  z-index: 999;
 
   &__title {
     text-align: center;
@@ -66,4 +69,124 @@
       padding-bottom: 0.5rem;
     }
   }
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 2rem 0;
+}
+
+.title {
+  color: $logo-wordmark;
+  font-weight: 500;
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.description {
+  color: $logo-wordmark;
+  font-weight: 200;
+  font-size: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid $logo-wordmark;
+  border-radius: 0.3125rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  border-radius: 0.3125rem;
+  background-color: $footer;
+  padding: 3rem;
+  width: 50%;
+}
+
+.label {
+  color: $logo-wordmark;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.button {
+  background-color: $hero-buton;
+  color: $background;
+  border-radius: 10% / 50%;
+  text-align: center;
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 200;
+  border-color: $hero-buton;
+}
+
+.footer {
+  @include flexJustify(space-evenly);
+  padding: 2rem 4rem;
+  background-color: $footer;
+
+  &__title {
+    color: $footer-title;
+    padding: 1rem 0 2rem 0;
+
+    &--sub {
+      color: $footer-subtitle;
+      font-size: 0.75rem;
+      font-weight: 300;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__details {
+    color: $footer-title;
+  }
+}
+
+.contact {
+  @include flexLeft(column);
+  margin-left: -3rem;
+}
+
+.hours {
+  @include flexLeft(column);
+
+  &__date-time {
+    @include flexLeft(row);
+    justify-content: space-between;
+    margin-left: -1.2rem;
+
+    &--dif {
+      padding: 0 1.2rem;
+    }
+  }
+}
+
+.socials {
+  @include flexLeft(column);
+}
+
+.icons {
+  height: 2rem;
+  width: 2rem;
+  padding: 0 1rem;
+
+  &-facebook {
+    width: 1rem;
+  }
+}
+
+.social-icon-wrap {
+  @include flexLeft(row);
+  margin-left: -1rem;
+  padding-top: 0.5rem;
 }

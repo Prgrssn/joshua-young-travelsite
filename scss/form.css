@@ -26,6 +26,10 @@ a {
   color: #000000;
 }
 
+body {
+  background-color: #fefaf5;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -37,7 +41,6 @@ a {
   top: 0;
   width: 100%;
   background-color: #ffffff;
-  z-index: 999;
 }
 .navbar__title {
   text-align: center;
@@ -69,4 +72,136 @@ a {
 .navbar-links__list--curent {
   border-bottom: 0.2rem solid #db7a4e;
   padding-bottom: 0.5rem;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 2rem 0;
+}
+
+.title {
+  color: #335576;
+  font-weight: 500;
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.description {
+  color: #335576;
+  font-weight: 200;
+  font-size: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #335576;
+  border-radius: 0.3125rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  border-radius: 0.3125rem;
+  background-color: #fefaf5;
+  padding: 3rem;
+  width: 50%;
+}
+
+.label {
+  color: #335576;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.button {
+  background-color: #db7a4e;
+  color: #ffffff;
+  border-radius: 10%/50%;
+  text-align: center;
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 200;
+  border-color: #db7a4e;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem 4rem;
+  background-color: #fefaf5;
+}
+.footer__title {
+  color: #335576;
+  padding: 1rem 0 2rem 0;
+}
+.footer__title--sub {
+  color: #db7a4e;
+  font-size: 0.75rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+.footer__details {
+  color: #335576;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: -3rem;
+}
+
+.hours {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.hours__date-time {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: -1.2rem;
+}
+.hours__date-time--dif {
+  padding: 0 1.2rem;
+}
+
+.socials {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.icons {
+  height: 2rem;
+  width: 2rem;
+  padding: 0 1rem;
+}
+.icons-facebook {
+  width: 1rem;
+}
+
+.social-icon-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-left: -1rem;
+  padding-top: 0.5rem;
 }/*# sourceMappingURL=form.css.map */
